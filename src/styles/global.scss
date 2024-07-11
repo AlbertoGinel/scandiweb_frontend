@@ -1,0 +1,203 @@
+$font-size: 16px;
+$primary-color: #333;
+
+.body {
+  //background-color: $primary-color;
+  //font-size: $font-size;
+}
+
+.footer-centered-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-centered-content {
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 1rem; /* Optional margin between form groups */
+}
+
+.form-group-furniture {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-bottom: 1rem; /* Optional margin between form groups */
+}
+
+.form-group-furniture > div {
+  display: flex;
+  align-items: center; /* Align items vertically within each div */
+}
+
+.form-group label {
+  width: 100px; /* Adjust label width as needed */
+  margin-right: 10px; /* Optional margin between label and input */
+  margin-bottom: 0.5rem;
+}
+
+.form-group-furniture label {
+  width: 100px; /* Adjust label width as needed */
+  margin-right: 10px; /* Optional margin between label and input */
+}
+
+.form-input {
+  flex: 1; /* Take up remaining space */
+  max-width: 300px; /* Limit maximum width of the input */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-input,
+select {
+  flex: 1;
+  max-width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-input::placeholder {
+  color: #6c757d;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header-left-element {
+  text-align: left;
+}
+
+.header-right-element {
+  display: flex;
+  gap: 10px;
+  text-align: right;
+}
+
+.horizontal-line {
+  border: none; /* Remove default border */
+  border-top: 2px solid #ccc; /* Customize the line's appearance */
+  margin: 0; /* Remove default margins */
+  width: 100%; /* Full width */
+}
+
+.horizontal-line-container {
+  padding: 5px 0; /* Optional padding around the line */
+  width: 100%;
+}
+
+.home {
+  margin: 30px 30px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  flex: 1; /* Ensure .product-details takes up remaining space */
+}
+
+.product-details p {
+  margin: 5px 0; /* Adjust vertical margin between paragraphs */
+}
+
+.product-grid {
+  display: grid;
+  gap: 30px; // Gap between grid items
+  grid-template-columns: repeat(4, 1fr); // 4 columns
+  grid-template-rows: repeat(3, auto); // 3 rows
+  padding: 20px;
+}
+
+.product-item {
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.product_form {
+  padding: 10px;
+}
+
+.delete-checkbox {
+  position: absolute; /* Make the checkbox absolutely positioned */
+  top: 10px; /* Position it at the top */
+  left: 10px; /* Position it at the left */
+  /* Additional styles (margin, size, etc.) */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* Other styles for the title */
+}
+
+.top-button {
+  background-color: transparent;
+  border: 1px solid #333; /* Example border style */
+  color: #333; /* Example text color */
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f0f0f0; /* Example hover background color */
+  }
+}
+
+#product_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; // Add some spacing between form elements
+  width: 100%; // Make the form take up the full width
+}
+
+.input[type="text"],
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1; // Make input element flexible to fill remaining space
+  padding: 0.5rem;
+}
+
+.description {
+  display: block; /* Ensure it behaves like a block element */
+  margin-top: 13px; /* Adjust spacing from the element above */
+  font-size: 14px; /* Adjust font size as needed */
+  color: #666; /* Set text color */
+  /* Additional styles (e.g., font-family, line-height, etc.) can be added here */
+}
