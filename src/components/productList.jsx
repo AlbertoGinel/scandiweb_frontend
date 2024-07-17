@@ -18,21 +18,13 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
 
   useImperativeHandle(ref, () => ({
     async handleMassDelete() {
-      const requestOptions = {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*", // Add this if you control the server; typically, this is set server-side.
-          "Access-Control-Allow-Methods": "DELETE, OPTIONS", // Speci
-        },
-        body: JSON.stringify({ idList: checkedList }),
-      };
-
       const response = await fetch(
         "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
-        requestOptions
+        {
+          method: "DELETE",
+          body: JSON.stringify({ idList: checkedList }),
+        }
       );
-
       if (response.ok) {
         setCheckedList([]);
         onChildUpdate();
