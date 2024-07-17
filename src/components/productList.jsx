@@ -29,7 +29,7 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
       };
 
       const response = await fetch(
-        "https://localhost/DaveHollingworth/REST_API/products/",
+        "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
         requestOptions
       );
 

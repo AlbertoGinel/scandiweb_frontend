@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useRef } from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./components/footer";
 import ProductForm from "./components/ProductForm";

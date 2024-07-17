@@ -50,7 +50,7 @@ const ProductForm = forwardRef((props, ref) => {
 
     try {
       const response = await fetch(
-        "https://localhost/DaveHollingworth/REST_API/products/",
+        "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
         {
           method: "POST",
           body: JSON.stringify(productData),
