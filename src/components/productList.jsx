@@ -23,6 +23,7 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
         {
           method: "DELETE",
           body: JSON.stringify({ idList: checkedList }),
+          mode: "no-cors",
         }
       );
       if (response.ok) {
