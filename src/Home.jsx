@@ -29,6 +29,23 @@ const Home = () => {
     fetchProducts();
   }, [parentState]);
 
+  //borrar
+  async function handleMassDelete() {
+    const response = await fetch(
+      "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
+      {
+        method: "DELETE",
+        body: JSON.stringify({ idList: [61] }),
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+    if (response.ok) {
+      console.log("Delete successful, clearing checkedList");
+    } else {
+      console.error("Failed to delete products");
+    }
+  }
+
   const handleAddProductClick = () => {
     navigate("/addproduct"); // Programmatic navigation using useNavigate
   };
@@ -59,6 +76,9 @@ const Home = () => {
             onClick={handleMassDeleteClick}
           >
             MASS DELETE
+          </button>
+          <button className="top-button" onClick={handleMassDelete}>
+            trampa
           </button>
         </div>
       </div>

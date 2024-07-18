@@ -21,7 +21,6 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
       const response = await fetch(
         "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
         {
-          mode: "cors",
           method: "DELETE",
           body: JSON.stringify({ idList: checkedList }),
           headers: { "Content-Type": "application/json" },
