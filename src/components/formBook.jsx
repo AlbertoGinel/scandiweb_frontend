@@ -11,7 +11,7 @@ const FormBook = ({ onWeightChange }) => {
   return (
     <>
       <div id="Book" className="form-group">
-        <label htmlFor="weight">Weight (lbs):</label>
+        <label htmlFor="weight">Weight (kg):</label>
         <input
           type="number"
           id="weight"
