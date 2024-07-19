@@ -31,6 +31,11 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
           body: JSON.stringify({ idList: checkedList }),
         }
       );
+
+      setCheckedList([]);
+      onChildUpdate();
+
+      console.log("eyy", response);
       if (response.ok) {
         setCheckedList([]);
         onChildUpdate();
