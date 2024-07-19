@@ -23,10 +23,10 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
         {
           method: "POST",
           mode: "no-cors",
-          headers: {
-            Accept: "application/json",
-            "Content-type": "application/json",
-          },
+          //headers: {
+          //  Accept: "application/json",
+          //  "Content-type": "application/json",
+          //},
 
           body: JSON.stringify({ idList: checkedList }),
         }
