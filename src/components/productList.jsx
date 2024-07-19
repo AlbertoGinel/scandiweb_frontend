@@ -36,7 +36,7 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
         onChildUpdate();
         console.log("Delete successful, clearing checkedList");
       } else {
-        console.error("Failed to delete products");
+        console.error("Failed to delete products", response);
       }
     },
   }));
