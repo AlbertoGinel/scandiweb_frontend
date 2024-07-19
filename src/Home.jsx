@@ -12,7 +12,6 @@ const Home = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      console.log("new products");
       try {
         const response = await fetch(
           "https://scandiweb-test-da56cd067ba1.herokuapp.com/products"

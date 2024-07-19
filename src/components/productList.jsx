@@ -22,6 +22,11 @@ const ProductList = forwardRef(({ products, onChildUpdate }, ref) => {
         "https://scandiweb-test-da56cd067ba1.herokuapp.com/products",
         {
           method: "DELETE",
+          headers: {
+            Accept: "application/json",
+            "Content-type": "application/json",
+          },
+
           body: JSON.stringify({ idList: checkedList }),
         }
       );
